@@ -1,15 +1,10 @@
-## Aihemäärittely: Tetris
+## Aihemäärittely: Tetris (alustava)
 
-Aihe: Toteutan ohjelmoinnin harjoitustyönä yksinkertaistetun version Tetriksestä. Peli on muuten kuten perinteinen Tetris, mutta joitakin ominaisuuksia on yksinkertaisuuden vuoksi poistettu. Tämä tarkoittaa käytännössä sitä, että esimerkiksi pelin tahti ei nopeudu pelin edetessä. Pelin idea on saada mahdollisimman pisteitä. 
+_Aihe:_ Toteutan ohjelmoinnin harjoitustyönä yksinkertaistetun version Tetriksestä. Peli on muuten kuten perinteinen Tetris, mutta joitakin ominaisuuksia on yksinkertaisuuden vuoksi poistettu. Tämä tarkoittaa käytännössä sitä, että esimerkiksi pelin tahti ei nopeudu pelin edetessä. Pelin idea on saada mahdollisimman pisteitä. 
 
-Käyttäjät: pelaaja
+_Käyttäjät:_ pelaaja
 
-Käyttäjien toiminnot: 
-Aihe: Tetris
-
-Käyttäjät: pelaaja
-
-Käyttäjän toiminnot: 
+_Käyttäjän toiminnot:_ 
 - Palojen siirtäminen
 - Palojen pudottaminen nopealla vauhdilla (painamalla välilyöntiä?)
 - Palojen kääntäminen
