@@ -6,4 +6,4 @@ Päivä | Tunnit | Kuvaus
 27.01.2017 | 8h | Projektin suunnittelua, pieniä korjauksia, koodausta (Tetromino, Muoto, Pala - harkitsen vielä, miten aion toteuttaa sovelluksen...), määrittelyvaiheen luokkakaavion teko, README.md:n muokkaus, testien aloittaminen
 ... | ... | ...
 
-// Testauksen kanssa ongelmia, enkä oikein edes tiedä, missä vika! Pitänee tulla pajaan kysymään apua, koska nyt en saanut testiraportteja tehtyä ollenkaan (tai sain, mutta raporteissa ei ole mitään tekstiä). 
+// Testauksen kanssa on ongelmia, mutta en oikein tiedä, missä vika! Raportit jäi tästä syystä tekemättä (sain siis kyllä tehtyä pit-raportin (sille oli aikaleimakin target-hakemistossa), mutta jostain syystä raportissa ei näkynyt mitään. Tulen varmaan pajaan kysymään apua ensi viikolla!
