@@ -5,6 +5,6 @@ Ohjelmoinnin harjoitustyöni on Tetris. Oma versioni on kuitenkin yksinkertaisem
 ## Dokumentaatio
 [aihemäärittely](Tetris/dokumentaatio/aihemaarittely.md)
 
-[aiheenKuvausJaRakenne](Tetris/dokumentaatio/aiheenKuvausJaRakenne.md)
+[aiheen kuvaus ja rakenne](Tetris/dokumentaatio/aiheenKuvausJaRakenne.md)
 
 [tuntikirjanpito](Tetris/dokumentaatio/tuntikirjanpito.md)
