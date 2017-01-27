@@ -6,6 +6,8 @@ _Käyttäjät:_ pelaaja
 
 _Käyttäjän toiminnot:_ 
 - Palojen siirtäminen
+- Uuden pelin aloittaminen
+- Pelin lopettaminen
 - Palojen pudottaminen nopealla vauhdilla (painamalla välilyöntiä?)
 - Palojen kääntäminen
 - Pelin laittaminen pauselle
