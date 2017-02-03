@@ -9,4 +9,4 @@ Ohjelmoinnin harjoitustyöni on Tetris. Oma versioni on kuitenkin yksinkertaisem
 
 [tuntikirjanpito](/dokumentaatio/tuntikirjanpito.md)
 
-[checkstyle](file:///home/salmisar/Javalabra2017/Tetris/target/site/checkstyle.html)
+[checkstyle](/home/salmisar/Javalabra2017/Tetris/target/site/checkstyle.html)
