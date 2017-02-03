@@ -1,5 +1,5 @@
 ### Aiheen kuvaus ja rakenne
 
-##### Määrittelyvaiheen luokkakaavio
+##### Luokkakaavio
 
-![Määrittelyvaiheen luokkakaavio](https://yuml.me/d7389b78)
+![Määrittelyvaiheen luokkakaavio](https://yuml.me/c7519701)
