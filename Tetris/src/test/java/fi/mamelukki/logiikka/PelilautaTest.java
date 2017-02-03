@@ -30,6 +30,37 @@ public class PelilautaTest {
     }
 
     @Test
+    public void metodiGetPelilautaPalauttaaOikeatArvot() {
+        Pelilauta pelilauta = new Pelilauta();
+        int[][] odotettuTulos
+                = 
+                {{9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
+                {9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9}};
+        int[][] tulos = pelilauta.getPelilauta();
+
+        assertArrayEquals(odotettuTulos, tulos);
+    }
+
+    @Test
     public void metodiTulostaPelilautaTulostaaPelilaudanOikein() {
         Pelilauta pelilauta = new Pelilauta();
         String tulos = pelilauta.tulostaPelilauta();
