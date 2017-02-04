@@ -21,7 +21,7 @@ public class TetrominoTest {
     public TetrominoTest() {
     }
 
-    // Testit eri muotoisille Tetrominoille 
+    // Testit erimuotoisille Tetrominoille 
     
     @Test
     public void IPalallaOikeatArvot() {
@@ -50,7 +50,7 @@ public class TetrominoTest {
     @Test
     public void ZPalallaOikeatArvot() {
         Tetromino pala = new Tetromino(3);
-        int[][] odotettuTulos = {{0, 0}, {-1, 0}, {-1, -1}, {0, 1}};
+        int[][] odotettuTulos = {{0, 0}, {1, 0}, {0, 1}, {1, -1}};
         int[][] tulos = pala.getTetromino();
         assertArrayEquals(odotettuTulos, tulos);
     }
