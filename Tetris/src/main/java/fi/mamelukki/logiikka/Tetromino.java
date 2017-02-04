@@ -11,6 +11,9 @@ import java.util.Random;
  *
  * @author salmisar
  */
+
+// Tetromino-luokka määrittelee erimuotoiset Tetris-palat eli Tetrominot
+
 public class Tetromino {
 
     private int[][] tetromino;
@@ -45,6 +48,18 @@ public class Tetromino {
         this.muoto = muoto;
         tetromino = tetrominot[this.muoto];
     }
+    
+    public int[][] getTetromino() {
+        return this.tetromino;
+    }
+
+    public static int[][] getTetromino(int muoto) {
+        return tetrominot[muoto];
+    }
+
+    public int getMuoto() {
+        return this.muoto;
+    }
 
     public void kaanna() { // Päivittää tetrominotaulukon aina kunkin kaannoksen jalkeen
         this.tetromino = this.seuraavaKaannos();
@@ -64,19 +79,7 @@ public class Tetromino {
         return tulos;
     }
 
-    public int[][] getTetromino() {
-        return this.tetromino;
-    }
-
-    public static int[][] getTetromino(int muoto) {
-        return tetrominot[muoto];
-    }
-
-    public int getMuoto() {
-        return this.muoto;
-    }
-
-    private int satunnainenMuoto() { //  Arpoo jonkin seitsemästä tetromino-muodosta
+    private int satunnainenMuoto() { // Arpoo jonkin seitsemästä tetromino-muodosta
         Random muodonArpoja = new Random();
         return muodonArpoja.nextInt(7);
     }

@@ -15,6 +15,10 @@ import javax.swing.JPanel;
  *
  * @author salmisar
  */
+
+// Pelilauta-luokka sisältää oleellisen pelilogiikan, esimerkiksi rivien tyhjentämisen ja uuden palan luomisen
+// Graafiseen käyttöliittymään liittyvät kohdat ovat siirtymässä omaan pakkaukseensa ja luokkaansa, kunhan ehdin päivittää tilanteen
+
 public class Pelilauta extends JPanel {
 
     public static Tetromino pala;
@@ -23,8 +27,6 @@ public class Pelilauta extends JPanel {
     private static int y;
     private static int x;
     private static Random random = new Random();
-    
-    // Sisältää oleellisen pelilogiikan, esimerkiksi rivien tyhjentämisen ja uuden palan luomisen
 
     public Pelilauta() { // Luo pelilautan ja ensimmäisen tetrominon
         this.setPreferredSize(new Dimension(200, 400));
@@ -73,8 +75,8 @@ public class Pelilauta extends JPanel {
         this.y = arvo;
     }
 
-    public void setX(int value) {
-        this.x = value;
+    public void setX(int arvo) {
+        this.x = arvo;
     }
 
     public static int getSeuraavaMuoto() {
@@ -207,7 +209,7 @@ public class Pelilauta extends JPanel {
         tyhjennaRivit(taydetRivit);
     }
 
-    private void tyhjennaRivit(int[] taydetRivit) { // Poistaa täytetyt rivit
+    private void tyhjennaRivit(int[] taydetRivit) { // Poistaa täydet rivit
         for (int i = 0; i < 4; i++) {
             if (taydetRivit[i] != 0) {
                 for (int j = 1; j < 11; j++) {

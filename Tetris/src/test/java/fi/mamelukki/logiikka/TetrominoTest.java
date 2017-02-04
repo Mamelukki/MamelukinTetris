@@ -22,6 +22,7 @@ public class TetrominoTest {
     }
 
     // Testit eri muotoisille Tetrominoille 
+    
     @Test
     public void IPalallaOikeatArvot() {
         Tetromino pala = new Tetromino(0);
