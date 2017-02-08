@@ -18,11 +18,37 @@ import static org.junit.Assert.*;
  */
 public class TetrominoTest {
 
+    private Tetromino tetromino;
+
     public TetrominoTest() {
+        this.tetromino = new Tetromino(2);
+    }
+
+    @Test
+    public void getTetrominoPalauttaaOikeanTuloksen() {
+        int[][] odotettuTulos = {{0, 0}, {1, 0}, {1, 1}, {0, -1}};
+        int[][] tulos = this.tetromino.getTetromino();
+        assertArrayEquals(odotettuTulos, tulos);
+    }
+
+    @Test
+    public void metodiSeuraavaKaannosEiKaannaKuutiota() {
+        Tetromino kuutio = new Tetromino(1);
+        kuutio.seuraavaKaannos();
+        kuutio.kaanna();
+        int[][] odotettuTulos = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
+        int[][] tulos = kuutio.getTetromino();
+        assertArrayEquals(odotettuTulos, tulos);
+    }
+
+    @Test
+    public void getMuotoPalauttaaOikeanArvon() {
+        int odotettuTulos = 2;
+        int tulos = this.tetromino.getMuoto();
+        assertEquals(odotettuTulos, tulos);
     }
 
     // Testit erimuotoisille Tetrominoille 
-    
     @Test
     public void IPalallaOikeatArvot() {
         Tetromino pala = new Tetromino(0);
@@ -86,5 +112,4 @@ public class TetrominoTest {
         int[][] tulos = pala.getTetromino();
         assertArrayEquals(odotettuTulos, tulos);
     }
-
 }
