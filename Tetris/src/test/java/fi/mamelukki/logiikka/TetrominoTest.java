@@ -32,7 +32,7 @@ public class TetrominoTest {
     }
 
     @Test
-    public void metodiSeuraavaKaannosEiKaannaKuutiota() {
+    public void metoditSeuraavaKaannosJaKaannaEivatKaannaKuutiota() {
         Tetromino kuutio = new Tetromino(1);
         kuutio.seuraavaKaannos();
         kuutio.kaanna();
@@ -49,6 +49,7 @@ public class TetrominoTest {
     }
 
     // Testit erimuotoisille Tetrominoille 
+    
     @Test
     public void IPalallaOikeatArvot() {
         Tetromino pala = new Tetromino(0);
