@@ -11,4 +11,4 @@ Ohjelmoinnin harjoitustyöni on Tetris. Oma versioni on kuitenkin yksinkertaisem
 
 [pit-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/pit/201702091802/index.html)
 
-[checkstyle]
+[checkstyle](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/checkstyle/checkstyle.html)
