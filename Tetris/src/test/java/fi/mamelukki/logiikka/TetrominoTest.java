@@ -13,7 +13,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * Tetromino-luokan testit keskeisille metodeille ja erimuotoisille paloille
+ * 
  * @author salmisar
  */
 public class TetrominoTest {
@@ -46,6 +47,15 @@ public class TetrominoTest {
         int odotettuTulos = 2;
         int tulos = this.tetromino.getMuoto();
         assertEquals(odotettuTulos, tulos);
+    }
+    
+    @Test
+    public void seuraavaKaannosPaivittaaPalanKoordinaatit() {
+        this.tetromino.seuraavaKaannos();
+        this.tetromino.kaanna();
+        int[][] odotettuTulos = {{0, 0}, {0, -1}, {1, -1}, {-1, 0}};
+        int[][] tulos = this.tetromino.getTetromino();
+        assertArrayEquals(odotettuTulos, tulos);
     }
 
     // Testit erimuotoisille Tetrominoille 
