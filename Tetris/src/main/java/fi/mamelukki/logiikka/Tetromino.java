@@ -19,23 +19,23 @@ public class Tetromino {
     private static int[][][] tetrominot // Taulukko, joka sisältää erimuotoisten tetrominojen koordinaatit
             = // IPala (0)
             {{{0, 0}, {0, 1}, {0, 2}, {0, -1}},
-            // KuutioPala (1)
-            {{0, 0}, {0, 1}, {1, 0}, {1, 1}},
-            // SPala (2)
-            {{0, 0}, {1, 0}, {1, 1}, {0, -1}},
-            // ZPala (3)
-            {{0, 0}, {1, 0}, {0, 1}, {1, -1}},
-            // TPala (4)
-            {{0, 0}, {1, 0}, {0, 1}, {-1, 0}},
-            // LPala (5)
-            {{0, 0}, {0, -1}, {0, 1}, {1, -1}},
-            // JPala (6)
-            {{0, 0}, {0, -1}, {0, 1}, {-1, -1}},
+             // KuutioPala (1)
+             {{0, 0}, {0, 1}, {1, 0}, {1, 1}},
+             // SPala (2)
+             {{0, 0}, {1, 0}, {1, 1}, {0, -1}},
+             // ZPala (3)
+             {{0, 0}, {1, 0}, {0, 1}, {1, -1}},
+             // TPala (4)
+             {{0, 0}, {1, 0}, {0, 1}, {-1, 0}},
+             // LPala (5)
+             {{0, 0}, {0, -1}, {0, 1}, {1, -1}},
+             // JPala (6)
+             {{0, 0}, {0, -1}, {0, 1}, {-1, -1}},
             // TyhjaPala (7)
-            {{0, 0}, {0, 0}, {0, 0}, {0, 0}}};
+             {{0, 0}, {0, 0}, {0, 0}, {0, 0}}};
 
     /**
-     * Konstruktori luo uuden satunnaisen tetrominon 
+     * Konstruktori luo uuden satunnaisen tetrominon
      */
     public Tetromino() {
         this.tetromino = new int[4][2];
@@ -44,7 +44,7 @@ public class Tetromino {
     }
 
     /**
-     * Konstruktori luo uuden halutunlaisen tetrominon 
+     * Konstruktori luo uuden halutunlaisen tetrominon
      *
      * @param muoto Haluttu muoto (taulukosta) integer-arvona
      */

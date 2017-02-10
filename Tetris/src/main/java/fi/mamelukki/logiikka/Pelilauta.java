@@ -12,13 +12,12 @@ import java.util.Random;
 import javax.swing.JPanel;
 
 /**
+ * Pelilauta-luokka sisältää oleellisen pelilogiikan, esimerkiksi rivien
+ * tyhjentämisen ja uuden palan luomisen (Graafiseen käyttöliittymään liittyvät
+ * kohdat ovat siirtymässä omaan luokkaansa, kunhan ehdin päivittää tilanteen)
  *
  * @author salmisar
  */
-
-// Pelilauta-luokka sisältää oleellisen pelilogiikan, esimerkiksi rivien tyhjentämisen ja uuden palan luomisen
-// Graafiseen käyttöliittymään liittyvät kohdat ovat siirtymässä omaan pakkaukseensa ja luokkaansa, kunhan ehdin päivittää tilanteen
-
 public class Pelilauta extends JPanel {
 
     public static Tetromino pala;
@@ -28,11 +27,15 @@ public class Pelilauta extends JPanel {
     private static int x;
     private static Random random = new Random();
 
-    public Pelilauta() { // Luo pelilautan ja ensimmäisen tetrominon
+    /**
+     * Konstruktori luo pelilaudan ja ensimmäisen tetrominon
+     *
+     * @see fi.mamelukki.logiikka.Tetromino#Tetromino()
+     */
+    public Pelilauta() {
         this.setPreferredSize(new Dimension(200, 400));
         this.pelilauta = new int[21][12];
-        for (int i = 0; i < 21; i++) // Pelilaudan koko on 10 x 20, reunoilla on yhdeksikköjä
-        {
+        for (int i = 0; i < 21; i++) { // Pelilaudan koko on 10 x 20, reunoilla on yhdeksikköjä
             this.pelilauta[i][11] = this.pelilauta[i][0] = 9;
         }
         for (int i = 0; i < 12; i++) {
@@ -44,6 +47,11 @@ public class Pelilauta extends JPanel {
         this.seuraavaPala = this.random.nextInt(7); // Arvotaan seuraava pala
     }
 
+    /**
+     * Piirtää pelilaudan ja sen elementit
+     *
+     * @param g Käytettävä Graphics-työkalu
+     */
     @Override
     public void paint(Graphics g) { // Piirtää pelilaudan ja sen elementit
         super.paint(g);
@@ -105,13 +113,13 @@ public class Pelilauta extends JPanel {
     public boolean onkoTilaa(int[][] uudetPisteet, int tarkastettavaX, int tarkastettavaY) { // Tarkistaa onko pelilaudalla tilaa tetrominolle
         boolean tulos = true;
         poistaTetromino();
-        
+
         for (int i = 0; i < 4; i++) {
             if (this.pelilauta[tarkastettavaY + uudetPisteet[i][1]][tarkastettavaX + uudetPisteet[i][0]] != 0) {
                 tulos = false;
             }
         }
-        
+
         merkitseTetromino();
         return tulos;
     }
@@ -235,4 +243,3 @@ public class Pelilauta extends JPanel {
         }
     }
 }
-
