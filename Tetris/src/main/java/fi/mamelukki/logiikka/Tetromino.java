@@ -9,17 +9,15 @@ import java.util.Random;
 
 /**
  * Tetromino-luokka määrittelee erimuotoiset Tetris-palat eli tetrominot
- * 
+ *
  * @author salmisar
  */
-
 public class Tetromino {
 
     private int[][] tetromino;
     private int muoto;
-    private static int[][][] tetrominot // Taulukko, joka sisältää eri muotoisten tetrominojen koordinaatit
-            = 
-            // IPala (0)
+    private static int[][][] tetrominot // Taulukko, joka sisältää erimuotoisten tetrominojen koordinaatit
+            = // IPala (0)
             {{{0, 0}, {0, 1}, {0, 2}, {0, -1}},
             // KuutioPala (1)
             {{0, 0}, {0, 1}, {1, 0}, {1, 1}},
@@ -35,28 +33,27 @@ public class Tetromino {
             {{0, 0}, {0, -1}, {0, 1}, {-1, -1}},
             // TyhjaPala (7)
             {{0, 0}, {0, 0}, {0, 0}, {0, 0}}};
-    
+
     /**
-     * Konstruktori uuden satunnaisen tetrominon luomiseen
+     * Konstruktori luo uuden satunnaisen tetrominon 
      */
-    
     public Tetromino() {
         this.tetromino = new int[4][2];
         this.muoto = satunnainenMuoto();
         this.tetromino = tetrominot[this.muoto];
     }
-    
+
     /**
-     * Konstruktori uuden halutunlaisen tetrominon luomiseen
+     * Konstruktori luo uuden halutunlaisen tetrominon 
+     *
      * @param muoto Haluttu muoto (taulukosta) integer-arvona
      */
-
     public Tetromino(int muoto) {
         tetromino = new int[4][2];
         this.muoto = muoto;
         tetromino = tetrominot[this.muoto];
     }
-    
+
     public int[][] getTetromino() {
         return this.tetromino;
     }
@@ -68,13 +65,12 @@ public class Tetromino {
     public int getMuoto() {
         return this.muoto;
     }
-    
+
     /**
-     * Metodi päivittää taulukon vastaamaan tetrominon seuraavaa käännöstä 
-     * Mikäli tetromino on kuutio, palaa ei tarvitse kääntää
+     * Metodi päivittää taulukon vastaamaan tetrominon seuraavaa käännöstä
+     *
      * @return Taulukko, jossa on käännetyn tetrominon uudet koordinaatit
      */
-
     public int[][] seuraavaKaannos() {
         if (this.muoto == 1) {
             return this.tetromino;
@@ -88,18 +84,18 @@ public class Tetromino {
 
         return tulos;
     }
-    
+
     /**
-     * Päivittää tetrominotaulukon aina kukin käännoksen jälkeen vastaamaan tetrominon tilaa 
-     * 
-     * @see fi.mamelukki.logiikka.Tetromino#seuraavaKaannos() 
+     * Päivittää tetrominotaulukon aina kukin käännoksen jälkeen vastaamaan
+     * tetrominon tilaa
+     *
+     * @see fi.mamelukki.logiikka.Tetromino#seuraavaKaannos()
      */
-    
     public void kaanna() {
         this.tetromino = this.seuraavaKaannos();
     }
 
-    private int satunnainenMuoto() { 
+    private int satunnainenMuoto() {
         Random muodonArpoja = new Random();
         return muodonArpoja.nextInt(7);
     }

@@ -207,7 +207,7 @@ public class PelilautaTest {
             {9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9},
             {9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9}
         };
-        
+
         assertArrayEquals(odotettuTulos, this.pelilauta.getPelilauta());
     }
 }
