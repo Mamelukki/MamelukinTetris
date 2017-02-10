@@ -9,5 +9,5 @@ Päivä | Tunnit | Kuvaus
 04.02.2017 | 30min | Pientä hienosäätöä koodiin ja testeihin, koodikatselmoinnin kirjoittamista
 08.02.2017 | 2h | Testien tekemistä
 09.02.2017 | 2h | Testien tekemistä (pit-raporttien avulla), JavaDocin aloittaminen luokalle Tetromino, uuden pit-raportin luonti, uuden checkstyle-raportin luonti
-10.02.2017 | 6h | InfoPaneeli-luokan luominen, luokkien hienosäätöä, testien tekemistä (Tetromino-luokka nyt lähes kokonaan testattu ja Pelialusta-luokasta testattu noin 50%), checkstyle-raportin luonti ja virheiden poisto (9 virheestä jäi jäljelle 1), JavaDocin edistäminen (Tetromino-luokan dokumentointi kutakuinkin valmis, muille luokille tehty kuvaukset ja dokumentointi muutamille metodeille), uusi pit-raportti, uusi checkstyle-raportti
+10.02.2017 | 6h | InfoPaneeli-luokan luominen, muiden luokkien hienosäätöä, testien tekemistä (Tetromino-luokka nyt lähes kokonaan testattu ja Pelilauta-luokasta testattu noin 50%), checkstyle-raportin luonti ja virheiden poisto (9 virheestä jäi jäljelle 1), JavaDocin edistäminen (Tetromino-luokan dokumentointi kutakuinkin valmis, muille luokille tehty kuvaukset ja dokumentointi muutamille metodeille), uusi pit-raportti, uusi checkstyle-raportti
 ... | ... | ...
