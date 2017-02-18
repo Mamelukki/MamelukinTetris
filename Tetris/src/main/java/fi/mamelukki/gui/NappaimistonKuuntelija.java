@@ -10,7 +10,7 @@ import java.awt.event.KeyEvent;
 
 /**
  * NäppimistonKuuntelija rekisteröi käyttäjältä saadun syötteen ja kutsuu
- * Tetris-luokan metodeja niiden toteuttamiseen
+ * Tetris-luokan metodeja niiden toteuttamiseen.
  *
  * @see fi.mamelukki.gui.Tetris
  * 

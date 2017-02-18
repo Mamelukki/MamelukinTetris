@@ -29,13 +29,17 @@ public class Tetris extends PelinKulku implements ActionListener {
     public static JFrame ikkuna;
     public static Container sisalto;
 
+    /**
+     * Main-luokka, joka luo uuden Tetris-pelin.
+     */
+    
     public static void main(String[] args) {
         Tetris tetris = new Tetris();
         tetris.run(1.3);
     }
 
     /**
-     * Kutsuu siirraAlas-metodia luokasta Pelilauta
+     * Kutsuu siirraAlas-metodia luokasta Pelilauta.
      *
      * @see fi.mamelukki.logiikka.Pelilauta#siirraAlas()
      */
@@ -44,7 +48,7 @@ public class Tetris extends PelinKulku implements ActionListener {
     }
 
     /**
-     * Kutsuu siirraVasemmalle-metodia luokasta Pelilauta
+     * Kutsuu siirraVasemmalle-metodia luokasta Pelilauta.
      *
      * @see fi.mamelukki.logiikka.Pelilauta#siirraVasemmalle()
      */
@@ -53,7 +57,7 @@ public class Tetris extends PelinKulku implements ActionListener {
     }
 
     /**
-     * Kutsuu siirraOikealle-metodia luokasta Pelilauta
+     * Kutsuu siirraOikealle-metodia luokasta Pelilauta.
      *
      * @see fi.mamelukki.logiikka.Pelilauta#siirraOikealle()
      */
@@ -62,7 +66,7 @@ public class Tetris extends PelinKulku implements ActionListener {
     }
 
     /**
-     * Kutsuu kaanna-metodia luokasta Pelilauta
+     * Kutsuu kaanna-metodia luokasta Pelilauta.
      *
      * @see fi.mamelukki.logiikka.Pelilauta#kaanna()
      */
@@ -71,7 +75,7 @@ public class Tetris extends PelinKulku implements ActionListener {
     }
 
     /**
-     * Metodi käynnistää pelin
+     * Metodi käynnistää pelin.
      *
      * @see fi.mamelukki.Pelilauta#Pelilauta()
      */
@@ -97,7 +101,7 @@ public class Tetris extends PelinKulku implements ActionListener {
     }
 
     /**
-     * Päivittää pelin päivittämällä pelilaudan tilan
+     * Päivittää pelin päivittämällä pelilaudan tilan.
      *
      * @see fi.mamelukki.logiikka.Pelilauta#siirraAlas()
      */
@@ -112,9 +116,9 @@ public class Tetris extends PelinKulku implements ActionListener {
     }
 
     /**
-     * Metodi toimii käyttäjältä saadun syötteen mukaan
+     * Metodi toimii käyttäjältä saadun syötteen mukaan.
      *
-     * @param e keyEvent NappaimistonKuuntelijalta saatu komento
+     * @param e NappaimistonKuuntelijalta saatu komento
      *
      * @see fi.mamelukki.gui.NappaimistonKuuntelija
      */

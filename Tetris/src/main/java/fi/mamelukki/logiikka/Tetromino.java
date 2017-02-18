@@ -8,7 +8,7 @@ package fi.mamelukki.logiikka;
 import java.util.Random;
 
 /**
- * Tetromino-luokka määrittelee erimuotoiset Tetris-palat eli tetrominot
+ * Tetromino-luokka määrittelee erimuotoiset Tetris-palat eli tetrominot.
  *
  * @author salmisar
  */
@@ -35,7 +35,7 @@ public class Tetromino {
              {{0, 0}, {0, 0}, {0, 0}, {0, 0}}};
 
     /**
-     * Konstruktori luo uuden satunnaisen tetrominon
+     * Konstruktori luo uuden satunnaisen tetrominon.
      */
     public Tetromino() {
         this.tetromino = new int[4][2];
@@ -44,7 +44,7 @@ public class Tetromino {
     }
 
     /**
-     * Konstruktori luo uuden halutunlaisen tetrominon
+     * Konstruktori luo uuden halutunlaisen tetrominon.
      *
      * @param muoto Haluttu muoto (taulukosta) integer-arvona
      */
@@ -67,7 +67,7 @@ public class Tetromino {
     }
 
     /**
-     * Metodi päivittää taulukon vastaamaan tetrominon seuraavaa käännöstä
+     * Metodi päivittää taulukon vastaamaan tetrominon seuraavaa käännöstä.
      *
      * @return Taulukko, jossa on käännetyn tetrominon uudet koordinaatit
      */
@@ -87,7 +87,7 @@ public class Tetromino {
 
     /**
      * Päivittää tetrominotaulukon aina kukin käännoksen jälkeen vastaamaan
-     * tetrominon tilaa
+     * tetrominon tilaa.
      *
      * @see fi.mamelukki.logiikka.Tetromino#seuraavaKaannos()
      */

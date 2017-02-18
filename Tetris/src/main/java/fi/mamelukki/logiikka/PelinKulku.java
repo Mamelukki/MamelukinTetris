@@ -7,7 +7,7 @@ package fi.mamelukki.logiikka;
 
 /**
  * PelinKulku-luokka määrittää Tetris-pelin ajankulun ja tarjoaa abstraktit
- * metodit pelitilanteen käsittelyyn, esimerkiksi pelin sammuttamiseen
+ * metodit pelitilanteen käsittelyyn, esimerkiksi pelin sammuttamiseen.
  *
  * @author salmisar
  */
@@ -17,7 +17,7 @@ public abstract class PelinKulku {
 
     /**
      * Run-metodi määrittää pelin sisäisen ajankulun, peliaika on run-metodin
-     * loopin suoritusaika
+     * loopin suoritusaika.
      *
      * @param aikavali arvo (sekunteina), jonka välein peli päivittää peliajan
      */
@@ -60,7 +60,7 @@ public abstract class PelinKulku {
     }
 
     /**
-     * Metodi pysäyttää run-metodin loopin suorittamisen
+     * Metodi pysäyttää run-metodin loopin suorittamisen.
      */
     public void pysayta() {
         running = false;
@@ -68,25 +68,25 @@ public abstract class PelinKulku {
 
     /**
      * Main-luokassa (Tetris-luokassa) toteutettava abstrakti metodi, joka
-     * päivittää pelin tilan
+     * päivittää pelin tilan.
      */
     public abstract void paivita();
 
     /**
      * Main-luokassa (Tetris-luokassa) toteutettava abstrakti metodi, joka
-     * piirtää graafiset elementit
+     * piirtää graafiset elementit.
      */
     public abstract void piirra();
 
     /**
      * Main-luokassa (Tetris-luokassa) toteutettava abstrakti metodi, joka
-     * käynnistää pelin
+     * käynnistää pelin.
      */
     public abstract void kaynnista();
 
     /**
      * Main-luokassa (Tetris-luokassa) toteutettava abstrakti metodi, joka
-     * sammuttaa pelin
+     * sammuttaa pelin.
      */
     public abstract void sammuta();
 

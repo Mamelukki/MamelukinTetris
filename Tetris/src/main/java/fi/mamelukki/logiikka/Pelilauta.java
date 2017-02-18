@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  * Pelilauta-luokka sisältää oleellisen pelilogiikan, esimerkiksi rivien
- * tyhjentämisen ja uuden palan luomisen 
+ * tyhjentämisen ja uuden palan luomisen.
  *
  * @author salmisar
  */
@@ -27,7 +27,7 @@ public class Pelilauta extends JPanel {
     private static Random random = new Random();
 
     /**
-     * Konstruktori luo pelilaudan ja ensimmäisen tetrominon
+     * Konstruktori luo pelilaudan ja ensimmäisen tetrominon.
      *
      * @see fi.mamelukki.logiikka.Tetromino#Tetromino()
      */
@@ -47,7 +47,7 @@ public class Pelilauta extends JPanel {
     }
 
     /**
-     * Piirtää pelilaudan ja sen elementit
+     * Piirtää pelilaudan ja sen elementit.
      *
      * @param g Käytettävä Graphics-työkalu
      */

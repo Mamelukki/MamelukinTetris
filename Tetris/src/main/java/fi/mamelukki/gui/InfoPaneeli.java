@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  * InfoPaneeli-luokka luo "status-paneelin", joka näyttää seuraavan tetrominon,
- * poistetut (täydet) rivit ja käyttäjän pisteet
+ * poistetut (täydet) rivit ja käyttäjän pisteet.
  *
  * @author salmisar
  */
@@ -29,7 +29,7 @@ public class InfoPaneeli extends JPanel {
 
     /**
      * Konstruktori luo InfoPaneelin, jossa näkyy seuraava tetromino, poistetut
-     * (täydet) rivit ja pelaajan pisteet
+     * (täydet) rivit ja pelaajan pisteet.
      *
      */
     public InfoPaneeli() {
@@ -49,7 +49,7 @@ public class InfoPaneeli extends JPanel {
     }
 
     /**
-     * Piirtää InfoPaneelin elementit
+     * Piirtää InfoPaneelin elementit.
      *
      * @param g Käytettävä Graphics-työkalu
      */
@@ -65,7 +65,7 @@ public class InfoPaneeli extends JPanel {
     }
 
     /**
-     * Metodi kasvattaa riveja täysien (poistettujen) rivien mukaan
+     * Metodi kasvattaa riveja täysien (poistettujen) rivien mukaan.
      *
      * @param rivit Rivien määrä täysien (poistettujen) rivien mukaan
      */
@@ -75,7 +75,7 @@ public class InfoPaneeli extends JPanel {
 
     /**
      * Metodi kasvattaa pisteita parametrina annettujen pisteiden mukaan
-     * (pisteet kasvavat vakionopeudella)
+     * (pisteet kasvavat vakionopeudella).
      *
      * @param pisteet Pisteet täysien (poistettujen) rivien mukaan
      */
@@ -83,6 +83,9 @@ public class InfoPaneeli extends JPanel {
         InfoPaneeli.pisteet = InfoPaneeli.pisteet + pisteet;
     }
 
+    /**
+     * Metodi palauttaa seuraavan palan.
+     */
     public void getSeuraavaPala() {
         this.seuraavaPala = Tetromino.getTetromino(Pelilauta.getSeuraavaMuoto());
     }
