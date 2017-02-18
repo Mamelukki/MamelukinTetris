@@ -9,6 +9,6 @@ Ohjelmoinnin harjoitustyöni on Tetris. Oma versioni on kuitenkin yksinkertaisem
 
 [tuntikirjanpito](/dokumentaatio/tuntikirjanpito.md)
 
-[pit-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/pit/201702101915/index.html)
+[pit-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/pit/201702181744/index.html)
 
-[checkstyle](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/checkstyle/checkstyle.html)
+[checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/checkstyle/checkstyle.html)
