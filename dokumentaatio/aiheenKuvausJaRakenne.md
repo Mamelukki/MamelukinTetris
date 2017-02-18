@@ -3,3 +3,7 @@
 ##### Luokkakaavio
 
 ![Luokkakaavio](https://yuml.me/bf80dc51)
+
+#### Sekvenssikaavioita käyttötapauksista
+
+![Käyttötapaus: Palan kääntäminen] (https://www.websequencediagrams.com/cgi-bin/cdraw?lz=Cgp0aXRsZSBLw6R5dHTDtnRhcGF1czogUGFsYW4ga8Okw6RudMOkbWluZW4KTWFpbiAtPiBUZXRyaXM6IG5ldwAFBygpAAwRcnVuKCkKACUGIC0-IFBlbGlsYXV0YQAyBgAGCSgpCgASCQBVCG9taW5vAFYKAAoFADUYcABQCC5rYWFubgA0HHQAUwguc2V1cmFhdmFLYWFubm9zAIEiBwByBQCBHQ9yZXR1cm4gdHVsb3MAgRsOAIFGC29ua29UaWxhYSgAIwUsIHgsIHkAgUkPAIEnDG9pc3RhAIFODAARGWFsAIFAGAAOGA&s=napkin)
