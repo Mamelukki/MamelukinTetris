@@ -13,8 +13,7 @@ import javax.swing.JPanel;
 
 /**
  * Pelilauta-luokka sisältää oleellisen pelilogiikan, esimerkiksi rivien
- * tyhjentämisen ja uuden palan luomisen (Graafiseen käyttöliittymään liittyvät
- * kohdat ovat siirtymässä omaan luokkaansa, kunhan ehdin päivittää tilanteen)
+ * tyhjentämisen ja uuden palan luomisen 
  *
  * @author salmisar
  */
@@ -53,14 +52,14 @@ public class Pelilauta extends JPanel {
      * @param g Käytettävä Graphics-työkalu
      */
     @Override
-    public void paint(Graphics g) { // Piirtää pelilaudan ja sen elementit
+    public void paint(Graphics g) {
         super.paint(g);
         for (int y = 0; y < 20; y++) {
             for (int x = 1; x < 11; x++) {
                 if (this.pelilauta[y][x] != 0) {
-                    g.setColor(Color.black);
+                    g.setColor(new Color(93, 173, 226));
                     g.fillRect((x - 1) * 20, y * 20, 20, 20);
-                    g.setColor(new Color((this.pelilauta[y][x]) * 500 + 1));
+                    g.setColor(new Color(133, 193, 233));
                     g.fillRect(20 * (x - 1) + 1, 20 * y + 1, 18, 18);
                 }
             }
@@ -71,19 +70,19 @@ public class Pelilauta extends JPanel {
         return this.pelilauta;
     }
 
-    public int getY() {
+    public int getYArvo() {
         return this.y;
     }
 
-    public int getX() {
+    public int getXArvo() {
         return this.x;
     }
 
-    public void setY(int arvo) {
+    public void setYArvo(int arvo) {
         this.y = arvo;
     }
 
-    public void setX(int arvo) {
+    public void setXArvo(int arvo) {
         this.x = arvo;
     }
 
