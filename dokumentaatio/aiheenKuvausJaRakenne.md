@@ -2,4 +2,4 @@
 
 ##### Luokkakaavio
 
-![Määrittelyvaiheen luokkakaavio](https://yuml.me/c7519701)
+![Luokkakaavio](https://yuml.me/bf80dc51)
