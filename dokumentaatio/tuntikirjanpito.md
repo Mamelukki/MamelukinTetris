@@ -12,5 +12,5 @@ Päivä | Tunnit | Kuvaus
 10.02.2017 | 6h | InfoPaneeli-luokan luominen, muiden luokkien hienosäätöä, testien tekemistä (Tetromino-luokka nyt lähes kokonaan testattu ja Pelilauta-luokasta testattu noin 50%), checkstyle-raportin luonti ja virheiden poisto (9 virheestä jäi jäljelle 1), JavaDocin edistämistä, uusi pit-raportti, uusi checkstyle-raportti
 16.02.2017 | 2h | Graafisen käyttöliittymän toteutusta
 17.02.2017 | 2h | Graafisen käyttöliittymän jatkamista, muutama uusi metodi Pelilauta-luokkaan, javaDocin edistämistä
-18.02.2017 | 4h | PelinKulku-luokan tekeminen, graafisen käyttöliittymän jatkamista, NappaimistonKuuntelija-luokan teko, JavaDocin tekoa, peli alkaa hahmottua (ohjelma toimii jo melko hyvin, mutta ongelmia vielä siinä vaiheessa, kun peliruutu täyttyy - peli ei siis lopu, vaikka tilaa ei ole ja paloja voi silti siirtää), ohjelman testausta käytännössä, luokkakaavion päivitys
+18.02.2017 | 4h | PelinKulku-luokan tekeminen, graafisen käyttöliittymän jatkamista, NappaimistonKuuntelija-luokan teko, JavaDocin tekoa, peli alkaa hahmottua (ohjelma toimii jo melko hyvin, mutta ongelmia vielä siinä vaiheessa, kun peliruutu täyttyy - peli ei siis lopu, vaikka tilaa ei ole ja paloja voi silti siirtää), ohjelman testausta käytännössä, luokkakaavion päivitys, kaksi sekvenssikaaviota käyttötapauksista
 ... | ... | ...
