@@ -1,6 +1,6 @@
 # Ohjelmoinnin harjoitustyö: Tetris
 
-Ohjelmoinnin harjoitustyöni on Tetris. Oma versioni on muistuttaa pitkälti perinteistä Tetris-peliä, mutta jätän joitain ominaisuuksia toteuttamatta yksinkertaisuuden vuoksi. Projektiin liittyvät dokumentit löytyvät Dokumentaatio-alaotsikon alta.
+Toteutan ohjelmoinnin harjoitustyönä Tetriksen. Oma versioni on muistuttaa pitkälti perinteistä Tetris-peliä, mutta jätän joitain ominaisuuksia toteuttamatta yksinkertaisuuden vuoksi. Projektiin liittyvät dokumentit löytyvät Dokumentaatio-alaotsikon alta.
 
 ## Dokumentaatio
 
