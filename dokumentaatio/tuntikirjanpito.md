@@ -13,7 +13,7 @@ Päivä | Tunnit | Kuvaus
 16.02.2017 | 2h | Graafisen käyttöliittymän toteutusta
 17.02.2017 | 2h | Graafisen käyttöliittymän jatkamista, muutama uusi metodi Pelilauta-luokkaan, javaDocin edistämistä
 18.02.2017 | 6h | PelinKulku-luokan tekeminen, graafisen käyttöliittymän jatkamista, NappaimistonKuuntelija-luokan teko, JavaDocin tekoa, peli alkaa hahmottua (ohjelma toimii jo melko hyvin, mutta ongelmia vielä siinä vaiheessa, kun peliruutu täyttyy - peli ei siis lopu, vaikka tilaa ei ole ja paloja voi silti siirtää), ohjelman testausta käytännössä, luokkakaavion päivitys, kaksi sekvenssikaaviota käyttötapauksista, koodikatselmoinnin kirjoittamista 
-24.02.2017 | 5h | Ohjelman hiomista (nyt näyttää jo hyvältä!), uusi pit-raportti, uusi checkstyle-raportti, käyttöohjeiden kirjoittaminen, rakennekuvauksen tekeminen, jar-tiedoston luonti
+24.02.2017 | 5h | Ohjelman hiomista (nyt näyttää jo hyvältä!), uusi pit-raportti, uusi checkstyle-raportti, käyttöohjeiden kirjoittaminen, rakennekuvauksen tekeminen, jar-tiedoston luonti, markdownin hienouksien selvittelyä
 ... | ... | ...
 
 NOTE TO SELF: Tee lisää testejä ja siirrä Pelilauta-luokan graafinen toteutus eri luokkaan!!
