@@ -1,14 +1,13 @@
 # Ohjelmoinnin harjoitustyö: Tetris
 
-Ohjelmoinnin harjoitustyöni on Tetris. Oma versioni on kuitenkin yksinkertaisempi kuin "perinteinen" Tetris, sillä jätän joitain ominaisuuksia toteuttamatta yksinkertaisuuden vuoksi. Projektiin liittyvät dokumentit löytyvät Dokumentaatio-alaotsikon alta. :)
+Toteutan ohjelmoinnin harjoitustyönä Tetriksen. Oma versioni on muistuttaa pitkälti perinteistä Tetris-peliä, mutta jätän joitain ominaisuuksia toteuttamatta yksinkertaisuuden vuoksi. Projektiin liittyvät dokumentit löytyvät Dokumentaatio-alaotsikon alta.
 
 ## Dokumentaatio
-[aihemäärittely](/dokumentaatio/aihemaarittely.md)
 
-[aiheen kuvaus ja rakenne](/dokumentaatio/aiheenKuvausJaRakenne.md) (sisältää luokkakaavion ja sekvenssikaaviot)
+[Aiheen kuvaus ja rakenne](/dokumentaatio/aiheenKuvausJaRakenne.md)
 
-[tuntikirjanpito](/dokumentaatio/tuntikirjanpito.md)
+[Tuntikirjanpito](/dokumentaatio/tuntikirjanpito.md)
 
-[pit-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/pit/201702181744/index.html)
+[Pit-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/pit/201702181744/index.html)
 
-[checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/checkstyle/checkstyle.html)
+[Checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/checkstyle/checkstyle.html)
