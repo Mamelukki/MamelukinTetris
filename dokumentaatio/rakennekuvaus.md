@@ -14,6 +14,6 @@ PelinKulku-luokka vastaa pelin sisäisestä ajankulusta ja tarjoaa abstraktit me
 
 ### Gui
 
-Graafinen käyttöliittymä käsittää luokat _Tetris_, _NappaimistonKuuntelija_ ja _InfoPaneeli_. Tetris on sovelluksen pääohjelma eli sisältää main-luokan. Tämän lisäksi Tetris toteuttaa PelinKulku-luokan abstraktit metodit, jotka liittyvät pelin keskeisiin toimintoihin, kuten pelin käynnistämiseen ja palojen siirtämiseen. 
+Graafinen käyttöliittymä käsittää luokat _Tetris_, _NappaimistonKuuntelija_ ja _InfoPaneeli_. Tetris on sovelluksen pääohjelma eli sisältää main-luokan. Tämän lisäksi Tetris toteuttaa PelinKulku-luokan abstraktit metodit, jotka liittyvät pelin keskeisiin toimintoihin, kuten pelin käynnistämiseen ja palojen siirtämiseen. Tetris-luokka myös piirtää pelinäkymän käynnistä-metodissa.
 
-Tetris hyödyntää myös NappaimistonKuuntelijaa pelikomentojen toteuttamiseen. NappaimistonKuuntelija saa siis käyttäjän syötteen ja ohjaa painettujen nuolinäppäinten mukaan pelin toimintaa. InfoPaneelin tehtävänä on näyttää seuraava pala, rivit ja pisteet, joten se pitää kirjaa pelitilanteesta.  
+Tetris hyödyntää myös NappaimistonKuuntelijaa pelikomentojen toteuttamiseen. NappaimistonKuuntelija saa siis käyttäjän syötteen ja ohjaa painettujen nuolinäppäinten mukaan pelin toimintaa. InfoPaneelin tehtävänä on näyttää seuraava pala, rivit ja pisteet, joten se "pitää kirjaa" pelitilanteesta.  
