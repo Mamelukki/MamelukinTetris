@@ -5,6 +5,7 @@
  */
 package fi.mamelukki.logiikka;
 
+import fi.mamelukki.gui.InfoPaneeli;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -12,8 +13,8 @@ import java.util.Random;
 import javax.swing.JPanel;
 
 /**
- * Pelilauta-luokka sisältää oleellisen pelilogiikan, esimerkiksi rivien
- * tyhjentämisen ja uuden palan luomisen.
+ * Pelilauta-luokka luo pelilaudan Tetris-peliin. Luokka sisältää oleellisen
+ * pelilogiikan, esimerkiksi rivien tyhjentämisen ja uuden palan luomisen.
  *
  * @author salmisar
  */
@@ -47,7 +48,7 @@ public class Pelilauta extends JPanel {
     }
 
     /**
-     * Piirtää pelilaudan ja sen elementit.
+     * Metodi piirtää pelilaudan ja sen elementit.
      *
      * @param g Käytettävä Graphics-työkalu
      */
@@ -57,9 +58,9 @@ public class Pelilauta extends JPanel {
         for (int y = 0; y < 20; y++) {
             for (int x = 1; x < 11; x++) {
                 if (this.pelilauta[y][x] != 0) {
-                    g.setColor(new Color(93, 173, 226));
+                    g.setColor(Color.ORANGE);
                     g.fillRect((x - 1) * 20, y * 20, 20, 20);
-                    g.setColor(new Color(133, 193, 233));
+                    g.setColor(new Color(253, 235, 59));
                     g.fillRect(20 * (x - 1) + 1, 20 * y + 1, 18, 18);
                 }
             }
@@ -90,7 +91,11 @@ public class Pelilauta extends JPanel {
         return seuraavaPala;
     }
 
-    public void merkitseTetromino() { // Merkitsee aktiivisen tetrominon pelilaudalle
+    /**
+     * Metodi merkitsee aktiivisen tetrominon pelilaudalle, mutta ei vielä
+     * piirrä sitä.
+     */
+    public void merkitseTetromino() {
         int[][] temp = this.pala.getTetromino();
         int muoto = this.pala.getMuoto();
 
@@ -102,14 +107,25 @@ public class Pelilauta extends JPanel {
         }
     }
 
-    public void poistaTetromino() { // Poistaa aktiivisen tetrominon pelilaudalta
+    /**
+     * Metodi poistaa aktiivisen tetrominon pelilaudalta.
+     */
+    public void poistaTetromino() {
         int[][] temp = this.pala.getTetromino();
         for (int i = 0; i < 4; i++) {
             this.pelilauta[this.y + temp[i][1]][this.x + temp[i][0]] = 0;
         }
     }
 
-    public boolean onkoTilaa(int[][] uudetPisteet, int tarkastettavaX, int tarkastettavaY) { // Tarkistaa onko pelilaudalla tilaa tetrominolle
+    /**
+     * Metodi Tarkistaa onko pelilaudalla tilaa tetrominolle.
+     *
+     * @param uudetPisteet tetrominon tarkastettavat koordinaatit
+     * @param tarkastettavaX tarkastettava x-akselin arvo
+     * @param tarkastettavaY tarkastettava y-akselin arvo
+     * @return boolean-arvo, joka määrittää, onko tilaa vai ei
+     */
+    public boolean onkoTilaa(int[][] uudetPisteet, int tarkastettavaX, int tarkastettavaY) {
         boolean tulos = true;
         poistaTetromino();
 
@@ -123,7 +139,13 @@ public class Pelilauta extends JPanel {
         return tulos;
     }
 
-    public Tetromino siirraAlas() { // Siirtää tetrominon yhden "pykälän" alemmas
+    /**
+     * Metodi siirtää aktiivisen tetrominon yhden askeleen alemmas.
+     *
+     * @return Aktiivinen tetromino
+     * @see fi.mamelukki.logiikka.Pelilauta#vapautaTetromino()
+     */
+    public Tetromino siirraAlas() {
         if (this.pala == null) {
             return this.pala;
         }
@@ -139,7 +161,12 @@ public class Pelilauta extends JPanel {
         }
     }
 
-    public Tetromino siirraVasemmalle() { // Siirtää tetrominon vasemmalle
+    /**
+     * Metodi siirtää aktiivisen tetrominon yhden askeleen vasemmalle.
+     *
+     * @return Aktiivinen tetromino
+     */
+    public Tetromino siirraVasemmalle() {
         if (this.pala == null) {
             return this.pala;
         }
@@ -154,7 +181,12 @@ public class Pelilauta extends JPanel {
         }
     }
 
-    public Tetromino siirraOikealle() { // Siirtää tetrominon oikealle 
+    /**
+     * Metodi siirtää aktiivisen tetrominon yhden askeleen oikealle.
+     *
+     * @return Aktiivinen tetromino
+     */
+    public Tetromino siirraOikealle() {
         if (this.pala == null) {
             return this.pala;
         }
@@ -167,11 +199,16 @@ public class Pelilauta extends JPanel {
         } else {
             return this.pala;
         }
-
     }
 
-    public void kaanna() { // Kääntää tetrominon
-        if (this.onkoTilaa(this.pala.seuraavaKaannos(), this.x, this.y)) { // Tarkistaa onko kääntämiseen tilaa
+    /**
+     * Metodi kääntää aktiivisen tetrominon, mikäli sille on tilaa.
+     *
+     * @see fi.mamelukki.logiikka.Tetromino#seuraavaKaannoos()
+     * @see fi.mamelukki.logiikka.Tetromino#kaanna()
+     */
+    public void kaanna() {
+        if (this.onkoTilaa(this.pala.seuraavaKaannos(), this.x, this.y)) {
             poistaTetromino();
             this.pala.kaanna();
             merkitseTetromino();
@@ -179,7 +216,13 @@ public class Pelilauta extends JPanel {
         }
     }
 
-    public String tulostaPelilauta() { // Tulostaa pelilaudan merkkijonona
+    /**
+     * Metodi palauttaa pelilaudan merkkijonona. Metodia on hyödynnetty
+     * esimerkiksi testauksessa.
+     *
+     * @return Pelilaudan tila merkkijonona
+     */
+    public String tulostaPelilauta() {
         String tulos = "";
         for (int i = 0; i < 20; i++) {
             for (int j = 1; j < 11; j++) {
@@ -190,16 +233,31 @@ public class Pelilauta extends JPanel {
         return tulos;
     }
 
-    private Tetromino vapautaTetromino() { // Vapauttaa tetrominon ja luo uuden
+    /**
+     * Metodi vapauttaa aktiivisen tetrominon ja luo tilalle uuden.
+     *
+     * @return Uusi aktiivinen tetromino
+     *
+     * @see fi.mamelukki.logiikka.Tetromino#Tetromino(int)
+     * @see fi.mamelukki.logiikka.Pelilauta#tarkistaRivit()
+     */
+    private Tetromino vapautaTetromino() {
         tarkistaRivit();
         this.y = 1;
         this.x = 4;
         this.pala = new Tetromino(seuraavaPala);
         this.seuraavaPala = random.nextInt(7);
+        tarkistaOnkoPeliOhi();
         return this.pala;
     }
 
-    private void tarkistaRivit() { // Tarkistaa täydet rivit
+    /**
+     * Metodi tarkistaa täydet rivit. Kun täydet rivit on löydetty, metodi
+     * tyhjentää rivit.
+     *
+     * @see fi.mamelukki.logiikka.Pelilauta#tyhjennaRivit(int[])
+     */
+    private void tarkistaRivit() {
         int[] taydetRivit = new int[4];
         int indeksi = 0;
         for (int i = 0; i < 20; i++) {
@@ -216,7 +274,14 @@ public class Pelilauta extends JPanel {
         tyhjennaRivit(taydetRivit);
     }
 
-    private void tyhjennaRivit(int[] taydetRivit) { // Poistaa täydet rivit
+    /**
+     * Metodi poistaa täydet rivit pelilaudalta.
+     *
+     * @param taydetRivit Taulukko, joka sisältää täytetyt rivit
+     *
+     * @see fi.mamelukki.logiikka.Pelilauta#pudotaRivit(int[])
+     */
+    private void tyhjennaRivit(int[] taydetRivit) {
         for (int i = 0; i < 4; i++) {
             if (taydetRivit[i] != 0) {
                 for (int j = 1; j < 11; j++) {
@@ -228,7 +293,17 @@ public class Pelilauta extends JPanel {
         pudotaRivit(taydetRivit);
     }
 
-    private void pudotaRivit(int[] taydetRivit) { // Pudottaa kaikki mahdolliset rivit alaspäin sen jälkeen, kun jokin rivi on tyhjennetty
+    /**
+     * Metodi pudottaa kaikki mahdolliset rivit alaspäin sen jälkeen, kun jokin
+     * rivi on tyhjennetty. Metodi kasvattaa myös infopaneelin pisteitä ja
+     * rivejä.
+     *
+     * @param taydetRivit Taulukko, joka sisältää täytetyt rivit
+     *
+     * @see fi.mamelukki.gui.InfoPaneeli#kasvataRiveja(int)
+     * @see fi.mamelukki.gui.InfoPaneeli#kasvataPisteita(int)
+     */
+    private void pudotaRivit(int[] taydetRivit) {
         int valmiitRivit = 0;
         for (int i = 0; i < 4; i++) {
             if (taydetRivit[i] != 0) {
@@ -240,5 +315,31 @@ public class Pelilauta extends JPanel {
                 }
             }
         }
+
+        InfoPaneeli.kasvataRiveja(valmiitRivit);
+        InfoPaneeli.kasvataPisteita(valmiitRivit * 10);
+        repaint();
+    }
+
+    /**
+     * Metodi tarkistaa, mahtuuko syntyvä tetromino sen aloituspaikkaan. Mikäli
+     * tetromino ei mahdu pelilaudalle, metodi kutsuu peliOhi-metodia.
+     *
+     * @see fi.mamelukki.logiikka.Pelilauta#peliOhi()
+     */
+    private void tarkistaOnkoPeliOhi() {
+        int[][] uudetPisteet = pala.getTetromino();
+        for (int i = 0; i < 4; i++) {
+            if (pelilauta[y + uudetPisteet[i][1]][x + uudetPisteet[i][0]] != 0) {
+                peliOhi();
+            }
+        }
+    }
+
+    /**
+     * Metodi sulkee pelin.
+     */
+    private void peliOhi() {
+        System.exit(0);
     }
 }

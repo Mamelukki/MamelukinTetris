@@ -19,7 +19,7 @@ public class Tetromino {
     private static int[][][] tetrominot // Taulukko, joka sisältää erimuotoisten tetrominojen koordinaatit
             = // IPala (0)
             {{{0, 0}, {0, 1}, {0, 2}, {0, -1}},
-             // KuutioPala (1)
+             // NelioPala (1)
              {{0, 0}, {0, 1}, {1, 0}, {1, 1}},
              // SPala (2)
              {{0, 0}, {1, 0}, {1, 1}, {0, -1}},
@@ -57,7 +57,7 @@ public class Tetromino {
     public int[][] getTetromino() {
         return this.tetromino;
     }
-
+    
     public static int[][] getTetromino(int muoto) {
         return tetrominot[muoto];
     }

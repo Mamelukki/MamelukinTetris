@@ -25,14 +25,15 @@ import javax.swing.JPanel;
 public class Tetris extends PelinKulku implements ActionListener {
 
     public static Pelilauta pelilauta;
+    public static InfoPaneeli infoPaneeli;
     public static NappaimistonKuuntelija nappaimistonKuuntelija;
     public static JFrame ikkuna;
     public static Container sisalto;
 
     /**
      * Main-luokka, joka luo uuden Tetris-pelin.
+     * @param args Argumentit
      */
-    
     public static void main(String[] args) {
         Tetris tetris = new Tetris();
         tetris.run(1.3);
@@ -82,17 +83,18 @@ public class Tetris extends PelinKulku implements ActionListener {
     @Override
     public void kaynnista() {
         pelilauta = new Pelilauta();
-        pelilauta.setBackground(Color.WHITE);
+        pelilauta.setBackground(Color.BLACK);
         pelilauta.merkitseTetromino();
+        infoPaneeli = new InfoPaneeli();
         nappaimistonKuuntelija = new NappaimistonKuuntelija();
         ikkuna = new JFrame("Tetris");
         ikkuna.setSize(300, 400);
         ikkuna.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ikkuna.add(pelilauta, BorderLayout.EAST);
+        ikkuna.add(infoPaneeli, BorderLayout.WEST);
         ikkuna.addKeyListener(nappaimistonKuuntelija);
         ikkuna.pack();
         ikkuna.setVisible(true);
-
     }
 
     @Override
@@ -108,11 +110,13 @@ public class Tetris extends PelinKulku implements ActionListener {
     @Override
     public void paivita() {
         pelilauta.siirraAlas();
+        infoPaneeli.getSeuraavaPala();
     }
 
     @Override
     public void piirra() {
         pelilauta.repaint();
+        infoPaneeli.repaint();
     }
 
     /**
