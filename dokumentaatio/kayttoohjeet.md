@@ -1,7 +1,7 @@
 # Käyttöohjeet
 
 ### Pelin käynnistäminen
-Pelin saa käynnistettyä kaksoisklikkaamalla .jar-tiedostoa (target-kansiossa), ajamalla ohjelman NetBeansissä (main-luokka on Tetris-luokan sisällä) tai suorittamalla komentoikkunassa komennon
+Pelin saa käynnistettyä kaksoisklikkaamalla .jar-tiedostoa (target-kansiossa), ajamalla ohjelman NetBeansissä tai suorittamalla komentoikkunassa komennon
 
 ``` 
 java -jar Tetris-1.0-SNAPSHOT.jar
