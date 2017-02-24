@@ -12,9 +12,13 @@ Peli on toimintaidealtaan hyvin samanlainen kuin perinteinen Tetris. Pelin idean
 Käyttäjän on mahdollista siirtää, kääntää ja pudottaa paloja. Nämä toiminnot onnistuvat seuraavilla näppäimillä:
 
 x - ohjelman sulkeminen
+
 ← palan siirtäminen vasemmalle
+
 ↑ palan kääntäminen
+
 → palan siirtäminen oikealle
+
 ↓ palan pudottaminen nopeammin
 
 Palat putoavat joka tapauksessa alemmas, mutta niiden putoamista on mahdollista nopeuttaa painamalla nuoli alas -näppäintä. 
