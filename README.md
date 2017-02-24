@@ -8,6 +8,10 @@ Toteutan ohjelmoinnin harjoitustyönä Tetriksen. Oma versioni on muistuttaa pit
 
 [Tuntikirjanpito](/dokumentaatio/tuntikirjanpito.md)
 
-[Pit-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/pit/201702181744/index.html)
+[Rakennekuvaus](https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/rakennekuvaus.md)
+
+[Käyttöohjeet](https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/kayttoohjeet.md)
+
+[Pit-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/pit/201702241818/index.html)
 
 [Checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/checkstyle/checkstyle.html)
