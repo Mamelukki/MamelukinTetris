@@ -2,9 +2,10 @@
 
 ### Pelin käynnistäminen
 Pelin saa käynnistettyä kaksoisklikkaamalla .jar-tiedostoa (target-kansiossa), ajamalla ohjelman NetBeansissä (main-luokka on Tetris-luokan sisällä) tai suorittamalla komentoikkunassa komennon
-java -jar Tetris-1.0-SNAPSHOT.jar
 
-Pelin saa NetBeansista
+``` 
+java -jar Tetris-1.0-SNAPSHOT.jar
+``` 
 
 ### Pelin sammuttaminen
 Peli on mahdollista sammuttaa painamalla ohjelmaruudun x-näppäintä. Peli myös sammuu automaattisesti, kun pelilaudalle ei enää mahdu uutta tetrominoa. Pelin päättymisestä ei tule erillistä ilmoitusta, eikä tuloksia ei ole mahdollista tallettaa mitenkään.
