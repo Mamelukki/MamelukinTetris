@@ -12,6 +12,8 @@ Toteutan ohjelmoinnin harjoitustyönä Tetriksen. Oma versioni muistuttaa pitkä
 
 [Käyttöohjeet](https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/kayttoohjeet.md)
 
+[Testausdokumentaatio](https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/testausdokumentaatio.md)
+
 [Pit-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/pit/201702241818/index.html)
 
 [Checkstyle-raportti](https://htmlpreview.github.io/?https://github.com/Mamelukki/MamelukinTetris/blob/master/dokumentaatio/checkstyle/checkstyle.html)
