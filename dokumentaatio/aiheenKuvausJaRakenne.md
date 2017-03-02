@@ -19,7 +19,7 @@ _Käyttäjän toiminnot:_
 
 ![Luokkakaavio](https://yuml.me/9b35a18b)
 
-Teknisistä syistä en saanut oikeaoppisesti merkattua PelinKulku-luokkaa abstraktiksi, mutta ajattelin silti, että sen olisi hyvä näkyä luokkakaaviossa, joten päädyin tällaiseen ratkaisuun. 
+<sub><sup>Teknisistä syistä en saanut oikeaoppisesti merkattua PelinKulku-luokkaa abstraktiksi. Mielestäni sen on kuitenkin että hyvä näkyä luokkakaaviossa, joten päädyin tällaiseen ratkaisuun. </sup></sub>
 
 ### Sekvenssikaavioita käyttötapauksista
 
