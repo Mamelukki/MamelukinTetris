@@ -22,10 +22,10 @@ public class Pelilauta extends JPanel {
 
     public static Tetromino pala;
     public static int seuraavaPala;
-    private static int pelilauta[][];
-    private static int y;
-    private static int x;
-    private static Random random = new Random();
+    private int pelilauta[][];
+    private int y;
+    private int x;
+    private Random random = new Random();
 
     /**
      * Konstruktori luo pelilaudan ja ensimmäisen tetrominon.
