@@ -17,7 +17,7 @@ _Käyttäjän toiminnot:_
 ### Luokkakaavio
 
 
-![Luokkakaavio](https://yuml.me/bf80dc51)
+![Luokkakaavio](https://yuml.me/9b35a18b)
 
 Teknisistä syistä en saanut oikeaoppisesti merkattua PelinKulku-luokkaa abstraktiksi, mutta ajattelin silti, että sen olisi hyvä näkyä luokkakaaviossa, joten päädyin tällaiseen ratkaisuun. 
 
